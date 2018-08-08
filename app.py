@@ -13,6 +13,7 @@ class homepageForm(Form):
 def index():
     formx = homepageForm(request.form)
     senti = ''
+    pol = ''
     if request.method == 'POST':
         sen = formx.sentiments.data
         x = TextBlob(sen)
