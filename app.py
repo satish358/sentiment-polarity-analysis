@@ -22,9 +22,9 @@ def index():
             senti = 'Given sentence have negative polarity'
         else:
             senti = 'Given sentence have positive polarity'
-        return render_template('home.html',form=formx,sent=senti,pol=pol)
+        return render_template('homepage.html',form=formx,sent=senti,pol=pol)
     else:
-        return render_template('home.html',form=formx,sent=senti,pol=pol)
+        return render_template('homepage.html',form=formx,sent=senti,pol=pol)
 
 
 

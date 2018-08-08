@@ -1,0 +1,25 @@
+{% extends 'app.html' %}
+
+{% block body %}
+  <div style="margin-top:80px;" class="offset-md-3 card col-md-6 align-self-center">
+    <div class="card-head">
+      <h3 class="card-title text-center">Fill Information</h3>
+    </div>
+    <div class="card-body">
+      <div class="col-md-12">
+        <h4 class="text-success">{{ sent }}</h4>
+        <h4 class="text-info">{{ pol }}</h4>
+      </div>
+      <form class="row" action="" method="post">
+        <div class="col-md-12">
+          <label> Enter Your Fillings in worlds </label>
+          {{form.sentiments(class="form-control")}}
+        </div>
+        <div class="col-md-3">
+          <br>
+          <button type="submit" name="button" class="btn btn-block btn-outline-success">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
